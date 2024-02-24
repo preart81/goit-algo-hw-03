@@ -4,21 +4,9 @@
 Рекурсивно копіює файли у вихідній директорії, переміщає їх до нової директорії
 та сортує в піддиректорії, назви яких базуються на розширенні файлів."""
 
-# import os
 import shutil
 from pathlib import Path
 import argparse
-
-
-# def copy_files(source_dir, destination_dir):
-#     for root, dirs, files in os.walk(source_dir):
-#         for file in files:
-#             extension = os.path.splitext(file)[1]
-#             if not os.path.exists(os.path.join(destination_dir, extension)):
-#                 os.makedirs(os.path.join(destination_dir, extension))
-#             shutil.copy(
-#                 os.path.join(root, file), os.path.join(destination_dir, extension)
-#             )
 
 
 def parse_argv():
